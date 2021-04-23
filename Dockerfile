@@ -24,4 +24,5 @@ ENV PATH $PATH:/usr/local/gc/google-cloud-sdk/bin
 
 RUN helm plugin install https://github.com/hypnoglow/helm-s3.git
 RUN helm plugin install https://github.com/hayorov/helm-gcs.git
+RUN helm plugin install https://github.com/chartmuseum/helm-push.git
 RUN helm repo add "stable" "https://charts.helm.sh/stable" --force-update
